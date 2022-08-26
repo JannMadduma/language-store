@@ -17,47 +17,43 @@
     ></script>
     <link rel="stylesheet" href="sal.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
-  <body>
+  <body style=" height: 100%;
+  width: 100%;
+  overflow: hidden;">
     <section class="sal-1">
-      <div class="container">
-        <h1
-          class="circle"
-          data-sal="slide-up"
+      <div class="container" data-tilt>
+        <img
+        class="circle"
+       
+          data-sal="zoom-in"
           data-sal-delay="300"
           data-sal-duration="1000"
           data-sal-easing="ease-out-back"
-        >
-          Scroll Animations with Sal.js
-        </h1>
+          data-sal-repeat="o.5"
+
+          src="./img/Circular_Elegant_Fashion_Boutique_Logo-removebg-preview.png"
+          alt=""
+        ></img>
       </div>
     </section>
-    <section class="sal-2">
-      <div class="container">
-        <img
-          data-sal="slide-right"
-          data-sal-delay="300"
-          data-sal-duration="1000"
-          data-sal-easing="ease-out-back"
-          src="https://i.pinimg.com/736x/73/ed/50/73ed50d9bfde8459aa2407f561224508--for-cats-ironman.jpg"
-          alt=""
-        />
-        <img
-          data-sal="slide-left"
-          data-sal-delay="300"
-          data-sal-duration="1000"
-          data-sal-easing="ease-out-back"
-          src="https://i.pinimg.com/736x/73/ed/50/73ed50d9bfde8459aa2407f561224508--for-cats-ironman.jpg"
-          alt=""
-        />
-      </div>
-    </section>
+
     <script src="sal.js"></script>
     <script>
       sal({
-        threshold: 0.1,
+        threshold: 1,
         once: false,
       });
+    </script>
+    <div data-tilt></div> <!-- Tilt element -->
+    <script src="jquery.js" ></script> <!-- Load jQuery first -->
+    <script src="tilt.jquery1.js" ></script>
+    <script src="tilt.js"></script> <!-- Load Tilt.js library -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.circle').tilt({scale: 2.2})
+      })
     </script>
   </body>
 </html>
