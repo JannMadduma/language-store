@@ -31,7 +31,15 @@
     <style>
       body {
         overflow-x: hidden;
+        height: 100%;
       }
+      .container-fluid {
+        height: calc(100% - 75px);
+      }
+      .imgContainer {
+        height: 100%;
+      }
+
       .wrapper {
         height: 100%;
         width: calc(100% + 1.5rem);
@@ -60,11 +68,13 @@
       }
 
       .splide__pagination__page {
-        background-color: red;
+        background-color: #f20707;
+        height: 15px;
+        width: 15px;
       }
       .splide__pagination__page.is-active {
         background-color: white;
-        border: 2px solid red;
+        border: 3px solid #f20707;
       }
 
       .carouselContainer {
@@ -83,10 +93,42 @@
         font-family: "Teko", sans-serif;
         white-space: nowrap;
       }
+
+      @media (max-width: 767.98px) {
+        body {
+          height: auto;
+        }
+
+        .container-fluid {
+          height: auto;
+        }
+
+        .imgContainer {
+          height: auto;
+        }
+
+        .carouselContainer {
+          box-sizing: border-box;
+          padding: 0px;
+          padding-bottom: 50px;
+          height: 50%;
+        }
+
+        .splide__pagination {
+          bottom: -50px;
+          right: 0px;
+          left: 0px;
+        }
+
+        marquee {
+          top: 50%;
+          font-size: 100px;
+        }
+      }
     </style>
   </head>
 
-  <body class="d-flex flex-column h-100">
+  <body>
     <marquee direction="right">
       LANGUAGE STORE LANGUAGE STORE LANGUAGE STORE LANGUAGE STORE
     </marquee>
@@ -106,18 +148,18 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div>
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-0 mb-lg-0"></ul>
+          <div class="navbar-text d-flex">
             <a
-              class="nav-link text-dark btn btn-light"
+              class="nav-link text-dark btn btn-light fw-bold"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
@@ -126,7 +168,7 @@
               Sign in
             </a>
             <a
-              class="nav-link text-dark btn btn-light"
+              class="nav-link text-dark btn btn-light fw-bold"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
@@ -134,19 +176,24 @@
             >
               Sign up
             </a>
-          </ul>
+          </div>
         </div>
       </div>
     </nav>
-    <div class="container-fluid h-100">
-      <div class="row wrapper">
-        <div class="col-md-2 d-flex align-content-between h-100 flex-wrap">
+    <div class="container-fluid">
+      <div class="row wrapper d-block d-md-flex">
+        <div
+          class="col-md-2 d-flex align-content-center align-content-md-between flex-wrap flex-column justify-content-between imgContainer"
+        >
           <img
             src="img/279453210_386454930164747_4926279490143760513_n.png"
-            class="mb-5 ms-4 img-fluid"
-            style="width: 110px; height: 120px; margin-top: 30%"
+            class="mb-5 mt-4 mb-md-5mt-md-3 ms-md-4 img-fluid"
+            style="width: 110px; height: 120px"
           />
-          <div class="pb-5 ps-4">Copyright © 2022<br />Language Store</div>
+          <div class="pb-5 ps-4 d-none d-md-block">
+            <span style="font-weight: bold; font-size: 40px">2022</span
+            ><br />Copyright © Language Store
+          </div>
         </div>
         <div class="col-md-8 offset-md-2 carouselContainer">
           <section class="splide" aria-labelledby="carousel-heading">
@@ -182,7 +229,7 @@
         type: "loop",
         perPage: 1.5,
         perMove: 1,
-        // autoplay: true,
+        autoplay: true,
         flickMaxPages: 6,
         interval: 1500,
         updateOnMove: true,
@@ -190,6 +237,9 @@
         speed: 500,
         breakpoints: {
           1440: {
+            perPage: 1.5,
+          },
+          768: {
             perPage: 1,
             padding: "30%",
           },
