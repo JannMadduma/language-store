@@ -3,11 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* body {
-  font-family: "Courier New", Courier, monospace;
-} */
-
+.navBG {
+  background-color: black;
+}
+.btnColor {
+  color: black;
+}
 section {
   min-height: 100%;
   display: flex;
