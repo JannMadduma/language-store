@@ -32,97 +32,10 @@
       body {
         overflow-x: hidden;
         height: 100%;
-      }
-      .container-fluid {
-        height: calc(100% - 75px);
-      }
-      .imgContainer {
-        height: 100%;
-      }
-
-      .wrapper {
-        height: 100%;
-        width: calc(100% + 1.5rem);
-      }
-      .splide {
-        display: block;
-      }
-      .splide__slide div {
-        display: block;
-        width: 100%;
-        transition: transform 600ms;
-        transform: scale(0.8);
-        transform-origin: center center;
-        height: 100%;
-        background-size: cover;
-        background-position: center center;
-      }
-
-      .splide__slide.is-active div {
-        transform: scale(1);
-      }
-      .splide__pagination {
-        bottom: -80px;
-        right: 0px;
-        left: auto;
-      }
-
-      .splide__pagination__page {
-        background-color: #f20707;
-        height: 15px;
-        width: 15px;
-      }
-      .splide__pagination__page.is-active {
-        background-color: white;
-        border: 3px solid #f20707;
-      }
-
-      .carouselContainer {
-        box-sizing: border-box;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        padding-left: 100px;
-        height: 100%;
-      }
-
-      marquee {
-        top: 25%;
-        width: 100%;
-        font-size: 300px;
-        position: absolute;
-        font-family: "Teko", sans-serif;
-        white-space: nowrap;
-      }
-
-      @media (max-width: 767.98px) {
-        body {
-          height: auto;
-        }
-
-        .container-fluid {
-          height: auto;
-        }
-
-        .imgContainer {
-          height: auto;
-        }
-
-        .carouselContainer {
-          box-sizing: border-box;
-          padding: 0px;
-          padding-bottom: 50px;
-          height: 50%;
-        }
-
-        .splide__pagination {
-          bottom: -50px;
-          right: 0px;
-          left: 0px;
-        }
-
-        marquee {
-          top: 50%;
-          font-size: 100px;
+        @media (max-width: 767.98px) {
+          body {
+            height: auto;
+          }
         }
       }
     </style>
@@ -177,74 +90,10 @@
         </div>
       </div>
     </nav>
-    <!-- <div class="container-fluid">
-      <div class="row wrapper d-block d-md-flex">
-        <div
-          class="col-md-2 d-flex align-content-center align-content-md-between flex-wrap flex-column justify-content-between imgContainer"
-        >
-          <img
-            src="img/279453210_386454930164747_4926279490143760513_n.png"
-            class="mb-5 mt-4 mb-md-5mt-md-3 ms-md-4 img-fluid"
-            style="width: 110px; height: 120px"
-          />
-          <div class="pb-5 ps-4 d-none d-md-block">
-            <span style="font-weight: bold; font-size: 40px">2022</span
-            ><br />Copyright © Language Store
-          </div>
-        </div>
-        <div class="col-md-8 offset-md-2 carouselContainer">
-          <section class="splide" aria-labelledby="carousel-heading">
-            <div class="splide__track splide__loop splide__track--ltr">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <div style="background-image: url('img/jann59.jpg')"></div>
-                </li>
-                <li class="splide__slide">
-                  <div style="background-image: url('img/jann59.jpg')"></div>
-                </li>
-                <li class="splide__slide">
-                  <div style="background-image: url('img/jann59.jpg')"></div>
-                </li>
-                <li class="splide__slide">
-                  <div style="background-image: url('img/jann59.jpg')"></div>
-                </li>
-                <li class="splide__slide">
-                  <div style="background-image: url('img/jann59.jpg')"></div>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
-    <script>
-      var splide = new Splide(".splide", {
-        arrows: false,
-        type: "loop",
-        perPage: 1.5,
-        perMove: 1,
-        autoplay: true,
-        flickMaxPages: 6,
-        interval: 1500,
-        updateOnMove: true,
-        pagination: true,
-        speed: 500,
-        breakpoints: {
-          1440: {
-            perPage: 1.5,
-          },
-          768: {
-            perPage: 1,
-            padding: "30%",
-          },
-        },
-      });
 
-      splide.mount();
-    </script>
     <script src="sal.js"></script>
     <script>
       sal({
