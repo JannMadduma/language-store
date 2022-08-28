@@ -6,6 +6,9 @@
 .navBG {
   background-color: #f2f2f2;
 }
+.bodyBG {
+  background-color: #f7c065;
+}
 .btnColor {
   color: #f2f2f2;
 }
@@ -20,12 +23,6 @@ section {
 .wrapper {
   width: 100%;
   height: 100%;
-}
-
-.container {
-  width: 200%;
-  margin: 0 auto;
-  opacity: 70%;
 }
 
 .sal-1 {

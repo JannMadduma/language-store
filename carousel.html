@@ -36,6 +36,8 @@
       }
       .container-fluid {
         height: calc(100% - 75px);
+        z-index: 9;
+        position: relative;
       }
       .imgContainer {
         height: 100%;
@@ -93,6 +95,7 @@
         position: absolute;
         font-family: "Teko", sans-serif;
         white-space: nowrap;
+        line-height: 1;
       }
 
       @media (max-width: 767.98px) {
@@ -125,16 +128,12 @@
           top: 50%;
           font-size: 100px;
         }
-        /* img {
-          position: absolute;
-          z-index: 10;
-        } */
       }
     </style>
   </head>
 
   <body>
-    <marquee direction="right" class="marqueebg">
+    <marquee direction="right">
       LANGUAGE STORE LANGUAGE STORE LANGUAGE STORE LANGUAGE STORE
     </marquee>
     <nav class="navbar navbar-expand-lg navBG">
@@ -160,7 +159,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse marqueebg" id="navbarText">
+        <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-0 mb-lg-0"></ul>
           <div class="navbar-text d-flex">
             <a
@@ -185,7 +184,7 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid marqueebg">
+    <div class="container-fluid">
       <div class="row wrapper d-block d-md-flex">
         <div
           class="col-md-2 d-flex align-content-center align-content-md-between flex-wrap flex-column justify-content-between imgContainer"
@@ -205,19 +204,29 @@
             <div class="splide__track splide__loop splide__track--ltr">
               <ul class="splide__list">
                 <li class="splide__slide">
-                  <div style="background-image: url('img/jann59.jpg')"></div>
+                  <a href="productDetails.html"
+                    ><div style="background-image: url('img/jann59.jpg')"></div
+                  ></a>
                 </li>
                 <li class="splide__slide">
-                  <div style="background-image: url('img/jann59.jpg')"></div>
+                  <a href="productDetails.html"
+                    ><div style="background-image: url('img/jann59.jpg')"></div
+                  ></a>
                 </li>
                 <li class="splide__slide">
-                  <div style="background-image: url('img/jann59.jpg')"></div>
+                  <a href="productDetails.html"
+                    ><div style="background-image: url('img/jann59.jpg')"></div
+                  ></a>
                 </li>
                 <li class="splide__slide">
-                  <div style="background-image: url('img/jann59.jpg')"></div>
+                  <a href="productDetails.html"
+                    ><div style="background-image: url('img/jann59.jpg')"></div
+                  ></a>
                 </li>
                 <li class="splide__slide">
-                  <div style="background-image: url('img/jann59.jpg')"></div>
+                  <a href="productDetails.html"
+                    ><div style="background-image: url('img/jann59.jpg')"></div
+                  ></a>
                 </li>
               </ul>
             </div>
