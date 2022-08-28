@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 .navBG {
-  background-color: black;
+  background-color: #f2f2f2;
 }
 .btnColor {
-  color: black;
+  color: #f2f2f2;
+}
+.marqueebg {
+  background-color: #f2f2f2;
 }
 section {
   min-height: 100%;
