@@ -44,8 +44,8 @@ section {
 }
 
 .squares {
-  height: 290px;
-  width: 250px;
+  height: 250px;
+  width: 290px;
   /* margin-right: calc(-250px / 2); */
 }
 
@@ -59,6 +59,14 @@ section {
   position: relative;
   animation: slideLeft 4s;
   left: -100%;
+  top: calc(50% - 150px);
+  opacity: 0;
+}
+
+.slide-left1 {
+  position: relative;
+  animation: slideLeft1 4s;
+  left: -35%;
   top: calc(50% - 150px);
   opacity: 0;
 }
@@ -78,6 +86,18 @@ section {
     left: -100%;
     top: calc(50% - 150px);
     opacity: 0;
+  }
+}
+@keyframes slideLeft1 {
+  0% {
+    left: calc(100% - 250px);
+    top: calc(50% - 150px);
+    opacity: 0.5;
+  }
+  100% {
+    left: -35%;
+    top: calc(50% - 150px);
+    opacity: 10;
   }
 
   /* 
