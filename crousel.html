@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" style="background-color: black">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,18 +20,68 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
-  <body></body>
+  <body style="height: 100%; width: 100%; overflow: hidden">
+    <section class="sal-1" style="display: block">
+      <div class="wrapper">
+        <img
+          class="squares slide-left"
+          src="./img/jann45.jpg"
+          alt=""
+          style="animation-delay: 0s"
+        />
+        <!-- <img
+          class="squares slide-left"
+          src="./img/jann45.jpg"
+          alt=""
+          style="animation-delay: 0.3s"
+        /> -->
+        <!-- <img
+          data-tilt
+          class="squares"
+          data-sal="slide-left"
+          data-sal-delay="600"
+          data-sal-duration="2000"
+          data-sal-easing="ease-out-back"
+          data-sal-repeat="0.5"
+          src="./img/jann45.jpg"
+          alt=""
+          style="z-index: 8"
+        />
+        <img
+          data-tilt
+          class="squares"
+          data-sal="slide-left"
+          data-sal-delay="900"
+          data-sal-duration="2000"
+          data-sal-easing="ease-out-back"
+          data-sal-repeat="0.5"
+          src="./img/jann45.jpg"
+          alt=""
+          style="z-index: 7" -->
+        />
+      </div>
+    </section>
+    <script src="sal.js"></script>
+    <script>
+      sal({
+        threshold: 1,
+        once: false,
+      });
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script> -->
 
-  <div data-tilt></div>
-  <!-- Tilt element -->
-  <script src="jquery.js"></script>
-  <!-- Load jQuery first -->
-  <script src="tilt.jquery1.js"></script>
-  <script src="tilt.js"></script>
-  <!-- Load Tilt.js library -->
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $(".circle").tilt({ scale: 2.2 });
-    });
-  </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".squares").tilt({
+          maxTilt: 20,
+          disableAxis: "x",
+        });
+      });
+    </script>
+    <script src="jquery.js"></script>
+    <!-- Load jQuery first -->
+    <script src="tilt.jquery1.js"></script>
+    <script src="tilt.jquery.js"></script>
+  </body>
 </html>
