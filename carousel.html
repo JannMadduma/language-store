@@ -1,0 +1,212 @@
+<html lang="en" style="background-color: black">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="sal.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .wrapper {
+        height: 100%;
+        width: calc(100% + 1.5rem);
+      }
+      .splide {
+        display: block;
+      }
+      .splide__slide div {
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        transition: transform 600ms;
+        transform: scale(0.8);
+        transform-origin: center center;
+        border: 1px solid;
+        height: 100%;
+        border: 1px solid black;
+      }
+      .splide__slide.is-active div {
+        transform: scale(1);
+      }
+      .splide__pagination {
+        bottom: -80px;
+        right: 0px;
+        left: auto;
+      }
+
+      .splide__pagination__page {
+        background-color: red;
+      }
+      .splide__pagination__page.is-active {
+        background-color: white;
+        border: 2px solid red;
+      }
+
+      .carouselContainer {
+        box-sizing: border-box;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-light">
+      <div class="container-fluid me-auto">
+        <a class="navbar-brand" href="#">nav var 1</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="1.html">1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="2.html">2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="3.html">3</a>
+            </li>
+          </ul>
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  nav var 2
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid h-100">
+      <div class="row wrapper">
+        <div class="col-md-2 d-flex align-content-between h-100 flex-wrap">
+          <img
+            src="img/279453210_386454930164747_4926279490143760513_n.png"
+            class="img-fluid"
+          />
+          <div class="pb-5 ps-4">Copyright © 2022<br />Language Store</div>
+        </div>
+        <div class="col-md-8 offset-md-2 carouselContainer">
+          <section class="splide" aria-labelledby="carousel-heading">
+            <!-- <h2 id="carousel-heading">Splide Basic HTML Example</h2> -->
+
+            <div class="splide__track splide__loop splide__track--ltr">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div>Slide 01</div>
+                </li>
+                <li class="splide__slide">
+                  <div>Slide 02</div>
+                </li>
+                <li class="splide__slide">
+                  <div>Slide 03</div>
+                </li>
+                <li class="splide__slide">
+                  <div>Slide 04</div>
+                </li>
+                <li class="splide__slide">
+                  <div>Slide 05</div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script>
+      var splide = new Splide(".splide", {
+        arrows: false,
+        type: "loop",
+        perPage: 1.5,
+        perMove: 1,
+        autoplay: true,
+        flickMaxPages: 6,
+        interval: 1500,
+        updateOnMove: true,
+        pagination: true,
+        speed: 500,
+        breakpoints: {
+          1440: {
+            perPage: 1,
+            padding: "30%",
+          },
+        },
+      });
+
+      splide.mount();
+    </script>
+    <script src="sal.js"></script>
+    <script>
+      sal({
+        threshold: 1,
+        once: false,
+      });
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script> -->
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".squares").tilt({
+          maxTilt: 20,
+          disableAxis: "x",
+        });
+      });
+    </script>
+    <script src="jquery.js"></script>
+    <!-- Load jQuery first -->
+    <script src="tilt.jquery1.js"></script>
+    <script src="tilt.jquery.js"></script>
+  </body>
+</html>
