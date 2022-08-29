@@ -1,0 +1,203 @@
+<html lang="en" style="background-color: black">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="sal.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arimo"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        overflow-x: hidden;
+        height: auto;
+        background-color: #f2f2f2;
+        @media (max-width: 767.98px) {
+          body {
+            height: auto;
+          }
+        }
+      }
+
+      .container {
+        max-width: 800px;
+
+        @media (max-width: 799px) {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navBG">
+      <div class="container-fluid me-auto">
+        <a class="navbar-brand fw-bold text-dark" href="#"
+          ><img
+            src="img/Untitled_design-removebg-preview.png"
+            alt=""
+            width="30"
+            height="30"
+            style="margin-top: -4px"
+          />
+          Language Store</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-0 mb-lg-0"></ul>
+          <div class="navbar-text d-flex">
+            <a
+              class="nav-link text-dark btn btnColor fw-bold"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Sign in
+            </a>
+            <a
+              class="nav-link text-dark btn btnColor fw-bold"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Sign up
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h2 class="text-uppercase text-center">Nihongo 5</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="text-uppercase">Product Detail</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aut
+            maiores dolores cum accusamus, minus minima tenetur porro alias
+            ipsa.
+          </p>
+          <span>Link</span>
+        </div>
+        <div class="col-md-4">
+          <img src="img/jann13.1.jpg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-4">
+          <h5>Variations</h5>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/jann13.1.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-md-4">
+              <img src="img/jann13.1.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-md-4">
+              <img src="img/jann13.1.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          Rating
+          <br />
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="col-md-4"><button>Add</button></div>
+        <div class="col-md-4">8 stocks</div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script>
+      var splide = new Splide(".splide", {
+        arrows: false,
+        type: "loop",
+        perPage: 1.5,
+        perMove: 1,
+        autoplay: true,
+        flickMaxPages: 6,
+        interval: 1500,
+        updateOnMove: true,
+        pagination: true,
+        speed: 500,
+        breakpoints: {
+          1440: {
+            perPage: 1.5,
+          },
+          768: {
+            perPage: 1,
+            padding: "30%",
+          },
+        },
+      });
+
+      splide.mount();
+    </script>
+    <script src="sal.js"></script>
+    <script>
+      sal({
+        threshold: 1,
+        once: false,
+      });
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script> -->
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".squares").tilt({
+          maxTilt: 20,
+          disableAxis: "x",
+        });
+      });
+    </script>
+    <script src="jquery.js"></script>
+    <!-- Load jQuery first -->
+    <script src="tilt.jquery1.js"></script>
+    <script src="tilt.jquery.js"></script>
+  </body>
+</html>
