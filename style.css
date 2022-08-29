@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Arimo";
+  font-size: 22px;
+}
+
 .navBG {
   background-color: #f2f2f2;
 }
