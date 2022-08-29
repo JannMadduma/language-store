@@ -5,7 +5,6 @@
 }
 body {
   font-family: "Arimo";
-  font-size: 22px;
 }
 
 .navBG {
@@ -110,49 +109,3 @@ section {
     opacity: 10;
   }
 
-  /* 
-
-  0% {
-    background: red;
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    background: yellow;
-    left: 90%;
-    top: 0px;
-  }
-  50% {
-    background: blue;
-    left: 90%;
-    top: 90%;
-  }
-  75% {
-    background: green;
-    left: -100%;
-    top: 90%;
-  }
-  100% {
-    background: red;
-    left: 0px;
-    top: 0px;
-  } */
-  /* 0% {
-    
-    top: 100%;
-    left: 100%;
-    border: 4px solid pink;
-  }
-  50% {
-    top: 50%;
-    border: 4px solid green;
-    opacity: 1;
-    left: 100%;
-  }
-
-  100% {
-    left: -100%;
-    opacity: 0;
-    border: 4px solid yellow;
-  } */
-}
