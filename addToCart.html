@@ -22,6 +22,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,114 +39,29 @@
     <style>
       body {
         overflow-x: hidden;
-        height: 100%;
+        height: auto;
         background-color: #f2f2f2;
-      }
-      .container-fluid {
-        height: calc(100% - 75px);
-        z-index: 9;
-        position: relative;
-      }
-      .imgContainer {
-        height: 100%;
-      }
-
-      .wrapper {
-        height: 100%;
-        width: calc(100% + 1.5rem);
-      }
-      .splide {
-        display: block;
-      }
-      .splide__slide div {
-        display: block;
-        width: 100%;
-        transition: transform 600ms;
-        transform: scale(0.8);
-        transform-origin: center center;
-        height: 100%;
-        background-size: cover;
-        background-position: center center;
-      }
-
-      .splide__slide.is-active div {
-        transform: scale(1);
-      }
-      .splide__pagination {
-        bottom: -80px;
-        right: 0px;
-        left: auto;
-      }
-
-      .splide__pagination__page {
-        background-color: #f20707;
-        height: 15px;
-        width: 15px;
-      }
-      .splide__pagination__page.is-active {
-        background-color: white;
-        border: 3px solid #f20707;
-      }
-
-      .carouselContainer {
-        box-sizing: border-box;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        padding-left: 100px;
-        height: 100%;
-      }
-
-      marquee {
-        top: 25%;
-        width: 100%;
-        font-size: 300px;
-        position: absolute;
-        font-family: "Teko", sans-serif;
-        white-space: nowrap;
-        line-height: 1;
-      }
-
-      @media (max-width: 767.98px) {
-        body {
-          height: auto;
+        @media (max-width: 767.98px) {
+          body {
+            height: auto;
+          }
         }
+      }
 
-        .container-fluid {
-          height: auto;
-        }
+      .container {
+        max-width: 800px;
 
-        .imgContainer {
-          height: auto;
-        }
-
-        .carouselContainer {
-          box-sizing: border-box;
-          padding: 0px;
-          padding-bottom: 50px;
-          height: 50%;
-        }
-
-        .splide__pagination {
-          bottom: -50px;
-          right: 0px;
-          left: 0px;
-        }
-
-        marquee {
-          top: 50%;
-          font-size: 100px;
+        @media (max-width: 799px) {
+          max-width: 100%;
         }
       }
     </style>
   </head>
 
   <body>
-    <marquee direction="right">
-      LANGUAGE STORE LANGUAGE STORE LANGUAGE STORE LANGUAGE STORE
-    </marquee>
-    <nav class="navbar navbar-light navbar-expand-lg navBG">
+    <nav class="navbar navbar-expand-lg navBG">
       <div class="container-fluid me-auto">
-        <a class="navbar-brand fw-bold text-dark" href="#"
+        <a class="navbar-brand fw-bold text-dark" href="carousel.html"
           ><img
             src="img/Untitled_design-removebg-preview.png"
             alt=""
@@ -184,59 +103,67 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid">
-      <div class="row wrapper d-block d-md-flex">
-        <div
-          class="col-md-2 d-flex align-content-center align-content-md-between flex-wrap flex-column justify-content-between imgContainer"
-        >
-          <img
-            src="img/logo.png"
-            class="mb-5 mt-4 mb-md-5mt-md-3 ms-md-4 img-fluid"
-            style="width: 110px; height: 120px"
-          />
-          <div class="pb-5 ps-4 d-none d-md-block">
-            <span style="font-weight: bold; font-size: 40px">2022</span
-            ><br />Copyright © Language Store
-          </div>
+    <h2 class="text-uppercase text-center mb-4">CART</h2>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <img src="img/jann59.jpg" alt="" class="img-fluid" />
         </div>
-        <div class="col-md-8 offset-md-2 carouselContainer">
-          <section class="splide" aria-labelledby="carousel-heading">
-            <div class="splide__track splide__loop splide__track--ltr">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <a href="productDetails.html"
-                    ><div style="background-image: url('img/jann59.jpg')"></div
-                  ></a>
-                </li>
-                <li class="splide__slide">
-                  <a href="productDetailsBlue.html"
-                    ><div style="background-image: url('img/jann49.jpg')"></div
-                  ></a>
-                </li>
-                <li class="splide__slide">
-                  <a href="productDetails.html"
-                    ><div
-                      style="background-image: url('img/flashcards67.jpg')"
-                    ></div
-                  ></a>
-                </li>
-                <li class="splide__slide">
-                  <a href="productDetails.html"
-                    ><div
-                      style="background-image: url('img/flashcards7ps.jpg')"
-                    ></div
-                  ></a>
-                </li>
-                <li class="splide__slide">
-                  <a href="productDetailsPink.html"
-                    ><div
-                      style="background-image: url('img/flashcard22.jpg')"
-                    ></div
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </section>
+        <div class="col-md-4 d-flex flex-column justify-content-center">
+          <h4 class="text-uppercase fs-4 fw-bold">NIHONGO 5</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aut
+            maiores dolores cum accusamus, minus minima tenetur porro alias
+            ipsa.
+          </p>
+          <span>Link</span>
+        </div>
+        <div
+          class="col-md-4 d-flex flex-row justify-content-center align-self-center"
+        >
+          <span class="align-self-center fs-1 me-md-4"> 2x </span>
+          <button class="btn">
+            <i class="bi bi-bag-plus text-dark fs-1"></i>
+          </button>
+
+          <button class="btn">
+            <i class="bi bi-bag-dash text-dark fs-1"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/jann41.jpg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-4 d-flex flex-column justify-content-center">
+          <h4 class="text-uppercase fs-4 fw-bold">NIHONGO 5</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aut
+            maiores dolores cum accusamus, minus minima tenetur porro alias
+            ipsa.
+          </p>
+          <span>Link</span>
+        </div>
+        <div
+          class="col-md-4 d-flex flex-row justify-content-center align-self-center"
+        >
+          <span class="align-self-center fs-1 me-md-4"> 1x </span>
+          <button class="btn">
+            <i class="bi bi-bag-plus text-dark fs-1"></i>
+          </button>
+
+          <button class="btn">
+            <i class="bi bi-bag-dash text-dark fs-1"></i>
+          </button>
+        </div>
+        <div class="col-md-4 pt-md-5 offset-md-4">
+          <button class="btn btn-warning rounded-0 w-100">
+            <a
+              class="text-dark text-decoration-none fw-bold"
+              href="addToCart.html"
+              >CHECKOUT</a
+            >
+          </button>
         </div>
       </div>
     </div>
@@ -304,7 +231,6 @@
         </div>
       </div>
     </div>
-
     <div
       class="modal fade"
       id="signInModal"
@@ -354,7 +280,6 @@
         </div>
       </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
     <script>

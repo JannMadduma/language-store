@@ -79,10 +79,10 @@ section {
 
 .modal-body {
   height: auto;
-  background: rgb(3, 152, 158), rgb(246, 188, 82);
+  background: rgb(0, 0, 0), rgb(246, 188, 82);
   background: linear-gradient(
       328deg,
-      rgba(3, 152, 158, 1) 40%,
+      rgb(0, 0, 0) 40%,
       rgba(255, 255, 255, 0) 40%
     ),
     linear-gradient(
@@ -90,6 +90,7 @@ section {
       rgba(246, 188, 82, 1) 40%,
       rgba(255, 255, 255, 0) 40%
     );
+  padding-bottom: 10px;
 }
 
 .slide-left {
