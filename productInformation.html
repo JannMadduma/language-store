@@ -103,36 +103,85 @@
         </div>
       </div>
     </nav>
-    <h2 class="text-uppercase text-center mb-4">Nihongo 5</h2>
+    <h2
+      class="text-uppercase text-center mb-4"
+      data-sal="zoom-in"
+      data-sal-delay="300"
+      data-sal-easing="ease-out-back"
+    >
+      Nihongo 5
+    </h2>
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <h4 class="text-uppercase fs-4">Product Details</h4>
-          <p>
+          <h4
+            class="text-uppercase fs-4"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-back"
+          >
+            Product Details
+          </h4>
+          <p
+            data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-easing="ease-out-back"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aut
             maiores dolores cum accusamus, minus minima tenetur porro alias
             ipsa.
           </p>
-          <span>Link</span>
+          <span
+            data-sal="slide-up"
+            data-sal-delay="500"
+            data-sal-easing="ease-out-back"
+            >Link</span
+          >
         </div>
         <div class="col-md-4">
           <img src="img/jann59.jpg" alt="" class="img-fluid" />
         </div>
         <div class="col-md-4">
-          <h5>Variations</h5>
+          <h5
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-back"
+          >
+            Variations
+          </h5>
           <div class="row">
-            <div class="col-md-4">
+            <div
+              class="col-md-4"
+              data-sal="slide-down"
+              data-sal-delay="300"
+              data-sal-easing="ease-out-back"
+            >
               <img src="img/jann41.jpg" alt="" class="img-fluid" />
             </div>
-            <div class="col-md-4">
+            <div
+              class="col-md-4"
+              data-sal="slide-down"
+              data-sal-delay="400"
+              data-sal-easing="ease-out-back"
+            >
               <img src="img/jann45.jpg" alt="" class="img-fluid" />
             </div>
-            <div class="col-md-4">
+            <div
+              class="col-md-4"
+              data-sal="slide-down"
+              data-sal-delay="500"
+              data-sal-easing="ease-out-back"
+            >
               <img src="img/jann49.jpg" alt="" class="img-fluid" />
             </div>
           </div>
         </div>
-        <div class="col-md-4 pt-md-5">
+        <div
+          class="col-md-4 pt-md-5"
+          data-sal="slide-down"
+          data-sal-delay="300"
+          data-sal-easing="ease-out-back"
+        >
           Rating
           <br />
           <span class="text-warning">
@@ -143,16 +192,24 @@
             <i class="bi bi-star-fill"></i>
           </span>
         </div>
-        <div class="col-md-4 pt-md-5">
+        <div class="col-md-4 pt-md-5 cart" data-tilt>
           <button class="btn btn-warning rounded-0 w-100">
             <a
               class="text-dark text-decoration-none fw-bold"
               href="addToCart.html"
+              data-sal="slide-down"
+              data-sal-delay="300"
+              data-sal-easing="ease-out-back"
               >Add to Cart</a
             >
           </button>
         </div>
-        <div class="col-md-2 offset-2 pt-md-5">
+        <div
+          class="col-md-2 offset-2 pt-md-5"
+          data-sal="slide-right"
+          data-sal-delay="300"
+          data-sal-easing="ease-out-back"
+        >
           <strong> 8</strong>
           stocks
         </div>
@@ -313,6 +370,9 @@
         $(".squares").tilt({
           maxTilt: 20,
           disableAxis: "x",
+        });
+        $(".cart").tilt({
+          scale: 1.2,
         });
       });
     </script>
