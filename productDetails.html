@@ -121,7 +121,9 @@
               <img
                 src="img/jann13.1.jpg"
                 style="height: 350px; width: 300px"
-                class="img-fluid pb-5 pb-md-5"
+                class="img-fluid pb-5 pb-md-5 image"
+                data-sal="zoom-in"
+                data-sal-delay="300"
               />
             </div>
             <div class="col-md-12">
@@ -147,10 +149,17 @@
                 src="img/jann59.1.png"
                 style="height: 500px"
                 class="img-fluid pb-3 pb-md-5"
+                data-sal="zoom-in"
+                data-sal-delay="300"
               />
             </div>
             <div class="offset-md-2 col-md-10 pt-md-5">
-              <img src="img/FB_IMG_1574941662835.jpg" class="img-fluid" />
+              <img
+                src="img/FB_IMG_1574941662835.jpg"
+                class="img-fluid"
+                data-sal="zoom-right"
+                data-sal-delay="400"
+              />
             </div>
           </div>
         </div>
@@ -197,6 +206,8 @@
             alt=""
             class="img-fluid"
             data-tilt
+            data-sal="zoom-left"
+            data-sal-delay="300"
           />
           <h4 class="w-semiboldfs-6 pt-3">blue</h4>
           <div class="row">
@@ -220,6 +231,8 @@
             alt=""
             class="img-fluid"
             data-tilt
+            data-sal="zoom-left"
+            data-sal-delay="400"
           />
           <h4 class="w-semiboldfs-6 pt-3">green</h4>
           <div class="row">
@@ -243,6 +256,8 @@
             alt=""
             class="img-fluid"
             data-tilt
+            data-sal="zoom-left"
+            data-sal-delay="500"
           />
           <h4 class="w-semiboldfs-6 pt-3">pink</h4>
           <div class="row">
@@ -271,6 +286,9 @@
             <h5
               class="w-semiboldfs-6 pt-3 offset-1"
               style="font-size: 12px; font-weight: bold"
+              data-sal="slide-right"
+              data-sal-delay="00"
+              data-sal-easing="ease-out-back"
             >
               PINK NIHONGO 5
             </h5>
@@ -279,6 +297,8 @@
               alt=""
               style="height: 170px; width: 150px"
               class="img-fluid p-2 offset-2"
+              data-sal="zoom-down"
+              data-sal-delay="200"
             />
             <div class="navbar-text d-flex">
               <a
@@ -286,6 +306,9 @@
                 href="productInformation.html"
                 role="button"
                 style="font-size: x-small; font-weight: bold"
+                data-sal="slide-left"
+                data-sal-delay="00"
+                data-sal-easing="ease-out-back"
               >
                 SHOP NOW
               </a>
@@ -309,6 +332,9 @@
                 <h5
                   class="w-semiboldfs-6 pt-3 offset-1"
                   style="font-size: 12px; font-weight: bold"
+                  data-sal="slide-right"
+                  data-sal-delay="00"
+                  data-sal-easing="ease-out-back"
                 >
                   BLUE NIHONGO 5
                 </h5>
@@ -317,6 +343,8 @@
                   style="height: 170px; width: 150px"
                   alt=""
                   class="img-fluid offset-2 pt-2"
+                  data-sal="zoom-down"
+                  data-sal-delay="200"
                 />
                 <div class="navbar-text">
                   <a
@@ -324,6 +352,9 @@
                     href="productInformation.html"
                     role="button"
                     style="font-size: x-small; font-weight: bold"
+                    data-sal="slide-left"
+                    data-sal-delay="00"
+                    data-sal-easing="ease-out-back"
                   >
                     SHOP NOW
                   </a>
@@ -339,6 +370,8 @@
               src="img/Screenshot 2022-08-28 214057.jpg"
               alt=""
               class="img-fluid"
+              data-sal="zoom-in"
+              data-sal-delay="200"
             />
           </div>
         </div>
@@ -349,7 +382,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <img src="img/profile.jpg" style="width: 150px; height: 150px" />
+            <img
+              src="img/profile.jpg"
+              style="width: 150px; height: 150px"
+              data-sal="zoom-left"
+              data-sal-delay="500"
+            />
           </div>
           <div
             class="col-md-3 font-weight-lighter pt-5 pb-5 pt-3 pb-5"
@@ -507,6 +545,9 @@
         $(".squares").tilt({
           maxTilt: 20,
           disableAxis: "x",
+        });
+        $(".image").tilt({
+          scale: 1.1,
         });
       });
     </script>

@@ -106,6 +106,8 @@
     <h2
       class="text-uppercase text-center fw-bolder fs-1 p-5 pb-3"
       style="font-size: 12px"
+      data-sal="zoom-in"
+      data-sal-delay="500"
     >
       THANK YOU!
     </h2>
@@ -114,23 +116,36 @@
         <div
           class="col-md-12 d-flex justify-content-center p-3 fst-italic font-weight-lighter"
         >
-          <p style="font-size: 16px; text-align: center">
+          <p
+            style="font-size: 16px; text-align: center"
+            data-sal="slide-up"
+            data-sal-delay="600"
+            data-sal-easing="ease-out-back"
+          >
             Thank you for purchasing in our shop. You will <br />receive an
             email message shortly.
           </p>
         </div>
         <div class="col-md-12 d-flex justify-content-center p-3">
           <img
+            data-tilt
             src="img/arigatou.jpg"
             alt=""
-            class="img-fluid"
+            class="img-fluid thankYou"
             style="width: 400px; height: 350px"
+            data-sal="zoom-in"
+            data-sal-delay="700"
           />
         </div>
         <div
-          class="col-md-12 d-flex justify-content-center p-3 font-weight-lighter"
+          class="col-md-12 d-flex justify-content-center p-3 font-weight-lighter pt-5"
         >
-          <p style="font-size: 11px">
+          <p
+            style="font-size: 11px"
+            data-sal="slide-up"
+            data-sal-delay="700"
+            data-sal-easing="ease-out-back"
+          >
             IF YOU DIDNT RECEIVE ANY EMAIL PLEASE CONTACT CS@LANGUAGESTORE.COM
           </p>
         </div>
@@ -288,9 +303,10 @@
 
     <script type="text/javascript">
       $(document).ready(function () {
-        $(".squares").tilt({
-          maxTilt: 20,
-          disableAxis: "x",
+        $(".thankYou").tilt({
+          glare: true,
+          maxGlare: 0.5,
+          scale: 1.2,
         });
       });
     </script>
