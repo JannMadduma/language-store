@@ -168,19 +168,15 @@
           <div class="navbar-text d-flex">
             <a
               class="nav-link text-dark btn btnColor fw-bold"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+              data-bs-toggle="modal"
+              data-bs-target="#signInModal"
             >
               Sign in
             </a>
             <a
               class="nav-link text-dark btn btnColor fw-bold"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+              data-bs-toggle="modal"
+              data-bs-target="#signUpModal"
             >
               Sign up
             </a>
@@ -239,6 +235,120 @@
               </ul>
             </div>
           </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="signUpModal"
+      tabindex="-1"
+      aria-labelledby="signUpModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content rounded-0">
+          <button
+            type="button"
+            class="btn-close float-end"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+
+          <div class="modal-body">
+            <h3>Sign Up</h3>
+            <div class="row g-3 align-items-center pt-5">
+              <div class="col-md-4">
+                <label for="username" class="col-form-label">Username</label>
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  id="username"
+                  class="form-control rounded-0"
+                  aria-describedby="passwordHelpInline"
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="password" class="col-form-label">Password</label>
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control rounded-0"
+                  aria-describedby="passwordHelpInline"
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="conpassword" class="col-form-label"
+                  >Confirm Password</label
+                >
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="password"
+                  id="conpassword"
+                  class="form-control rounded-0"
+                  aria-describedby="passwordHelpInline"
+                />
+              </div>
+              <div class="offset-md-4 col-md-6">
+                <button class="btn btn-warning w-100 rounded-0">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="signInModal"
+      tabindex="-1"
+      aria-labelledby="signInModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content rounded-0">
+          <button
+            type="button"
+            class="btn-close float-end"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+
+          <div class="modal-body">
+            <h3>Sign In</h3>
+            <div class="row g-3 align-items-center pt-5">
+              <div class="col-md-4">
+                <label for="username" class="col-form-label">Username</label>
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  id="username"
+                  class="form-control rounded-0"
+                  aria-describedby="passwordHelpInline"
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="password" class="col-form-label">Password</label>
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control rounded-0"
+                  aria-describedby="passwordHelpInline"
+                />
+              </div>
+              <div class="offset-md-4 col-md-6">
+                <button class="btn btn-warning w-100 rounded-0">Sign In</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

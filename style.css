@@ -55,7 +55,6 @@ section {
 .squares {
   height: 250px;
   width: 290px;
-  /* margin-right: calc(-250px / 2); */
 }
 
 #topPic {
@@ -64,8 +63,31 @@ section {
   margin-right: 100%;
 }
 
-.btn:focus {
+.btn:focus,
+.btn-close:focus {
   box-shadow: none;
+}
+
+.btn-close {
+  position: absolute;
+  right: 4;
+  z-index: 9;
+  top: 4;
+}
+
+.modal-body {
+  height: auto;
+  background: rgb(3, 152, 158), rgb(246, 188, 82);
+  background: linear-gradient(
+      328deg,
+      rgba(3, 152, 158, 1) 40%,
+      rgba(255, 255, 255, 0) 40%
+    ),
+    linear-gradient(
+      32deg,
+      rgba(246, 188, 82, 1) 40%,
+      rgba(255, 255, 255, 0) 40%
+    );
 }
 
 .slide-left {
@@ -112,4 +134,4 @@ section {
     top: calc(50% - 150px);
     opacity: 10;
   }
-
+}
