@@ -5,6 +5,8 @@
 }
 body {
   font-family: "Arimo";
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .navBG {
