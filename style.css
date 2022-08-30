@@ -64,6 +64,10 @@ section {
   margin-right: 100%;
 }
 
+.btn:focus {
+  box-shadow: none;
+}
+
 .slide-left {
   position: relative;
   animation: slideLeft 4s;
